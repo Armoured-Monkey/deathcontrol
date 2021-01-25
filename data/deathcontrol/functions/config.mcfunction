@@ -14,7 +14,7 @@ execute if score dc.keepinv dc_config matches 0 run tellraw @s ["",{"text":"[ �
 execute unless score dc.keepinv dc_config matches 0 run tellraw @s ["",{"text":"[ ✔ ]","color":"green","clickEvent":{"action":"run_command","value":"/function deathcontrol:config/disable_keep_inventory"},"hoverEvent":{"action":"show_text","contents":["",{"text":"Click to disable ","color":"red"},"Keep Inventory",{"text":".","color":"red"}]}}," Keep Inventory"]
 
 # Keep Experience
-# Sets player's xp to 0l0p when disabled.
+# Sets player's xp to 0 levels and 0 points when disabled.
 # Default: Enabled
 execute if score dc.keepexp dc_config matches 0 run tellraw @s ["",{"text":"[ ❌ ]","color":"red","clickEvent":{"action":"run_command","value":"/function deathcontrol:config/enable_keep_experience"},"hoverEvent":{"action":"show_text","contents":["",{"text":"Click to enable ","color":"green"},"Keep Experience",{"text":".","color":"green"}]}}," Keep Experience when using Keep Inventory"]
 execute unless score dc.keepexp dc_config matches 0 run tellraw @s ["",{"text":"[ ✔ ]","color":"green","clickEvent":{"action":"run_command","value":"/function deathcontrol:config/disable_keep_experience"},"hoverEvent":{"action":"show_text","contents":["",{"text":"Click to disable ","color":"red"},"Keep Experience",{"text":".","color":"red"}]}}," Keep Experience when using Keep Inventory"]
