@@ -1,0 +1,12 @@
+This data/resource pack was made by ArmouredMonkey.
+Contact: Twitter - @armouredmonkey1
+Discord - https://discord.gg/92wPVejgYB
+Website - https://sites.google.com/view/monkeyarmoury/home
+Do not redistribute this pack, direct people to my discord or website.
+
+When using this pack in YouTube Videos (or equivalent) please add the following text in your description:
+"I am using "Minecraft Tweaks" by ArmouredMonkey. They can be found here: https://sites.google.com/view/monkeyarmoury/home"
+
+If you are using this pack in your own creation, follow the guidelines found at https://sites.google.com/view/monkeyarmoury/copyright
+You MUST have a "credits.txt" with the following text included:
+"This pack uses edited versions of some Minecraft Tweaks by ArmouredMonkey. These can be found at https://sites.google.com/view/monkeyarmoury/home"

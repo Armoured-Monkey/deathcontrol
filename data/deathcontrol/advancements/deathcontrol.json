@@ -1,0 +1,17 @@
+{
+    "display": {
+        "title": "Death Control",
+        "description": "§3Configure what happens upon death. Use §b/function deathcontrol:config§3 to open the admin menu.",
+        "icon": {
+            "item": "minecraft:skeleton_skull"
+        },
+        "announce_to_chat": false,
+        "show_toast": false
+    },
+    "parent": "global:armouredmonkey",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}
