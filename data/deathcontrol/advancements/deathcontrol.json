@@ -1,9 +1,23 @@
 {
     "display": {
         "title": "Death Control",
-        "description": "§3Configure what happens upon death. Use §b/function deathcontrol:config§3 to open the admin menu.",
+        "description": [
+            "",
+            {
+                "text": "Configure what happens when a player dies. Use ",
+                "color": "#e25903"
+            },
+            {
+                "text": "/function deathcontrol:config",
+                "color": "#7f3202"
+            },
+            {
+                "text": " to open the admin menu.",
+                "color": "#e25903"
+            }
+        ],
         "icon": {
-            "item": "minecraft:skeleton_skull"
+            "item": "skeleton_skull"
         },
         "announce_to_chat": false,
         "show_toast": false
