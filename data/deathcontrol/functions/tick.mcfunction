@@ -1,11 +1,15 @@
-# Keep XP upon death. When dc.keepexp dc_config is 0 xp is cleared when health is 0
-execute if score dc.keepexp dc_config matches 0 run xp set @p[scores={dc_health=0}] 0 levels
-execute if score dc.keepexp dc_config matches 0 run xp set @p[scores={dc_health=0}] 0 points
+# Checks for players that need to be processed
+# Called by minecraft:tick tag
 
-# Store Players XP in scoreboards
-# execute at @a store result score @s dc_xppoints run xp query @s points
-# execute at @a store result score @s dc_xplevels run xp query @s levels
+# Give the initial amount of lives to a player when they first join. 
+execute if score lives dc_config matches 1 unless score @p dc_initlives matches 1 run function deathcontrol:set_initial_lives
 
+# Store xp points and levels in respective scoreboards
+execute store result score @p dc_xppoints run experience query @p points
+execute store result score @p dc_xplevels run experience query @p levels
 
-# Give deaths loot table to players when they die.
-execute if score dc.loot dc_config matches 1 at @e[type=player,scores={dc_deaths=1..}] run function deathcontrol:loot
+# Restores xp to players once they respawn
+# execute if score keepexp dc_config matches 1 unless score keepinv dc_config matches 1 as @a[scores={dc_deaths=0,dc_xplevels_it=1..,dc_xppoints_it=1..}] run function deathcontrol:process/iterate/xp
+
+# Process players who die
+execute at @p[scores={dc_deaths=1..}] run function deathcontrol:process

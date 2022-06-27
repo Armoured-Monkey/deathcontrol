@@ -1,6 +1,6 @@
 {
 	"pack": {
-		"pack_format": 10,
+		"pack_format": 8,
 		"description": "Allows you to have more control over the results of death, by ArmouredMonkey"
 	}
 }

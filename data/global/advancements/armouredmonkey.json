@@ -1,7 +1,17 @@
 {
     "display": {
         "title": "ArmouredMonkey",
-        "description": "§3Find my packs at https://sites.google.com/view/monkeyarmoury/downloads",
+        "description": [
+            "",
+            {
+                "text": "Find my packs at ",
+                "color": "#e25903"
+            },
+            {
+                "text": "https://sites.google.com/view/monkeyarmoury/home",
+                "color": "#d9b35c"
+            }
+        ], 
         "icon": {
             "item": "minecraft:player_head",
             "nbt": "{SkullOwner: 'ArmouredMonkey'}"
